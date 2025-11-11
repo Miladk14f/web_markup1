@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="google-stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="home-header">
+        <section class="logo">
+            <img src="img/logo.png" title="logo" alt="Logo">
+        </section>
+
+        <nav class="desktop-nav">
+            <ul class="navbar">
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#">Exercise</a></li>
+                <li><a href="#">Coach</a></li>
+                <li><a href="diet.html">Diet</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><i class="material-icons" style="font-size:36px">person_outline</i></li>
+            </ul>
+        </nav>
+
+        <section class="burger">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                ☰
+            </label>
+
+            <nav class="menu">
+                <ul class="navbar-mobile">
+                    <li><i class="material-icons" style="font-size:36px">person_outline</i></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="diet.html">Diet</a></li>
+                    <li><a href="#">Coach</a></li>
+                    <li><a href="#">Exercise</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions? Fill out the form below and we will get back to you as soon as possible.
+            </p>
+
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <ul>
+                        <li>
+                            <label for="salutation">Salutation*:</label>
+                            <select id="salutation" name="salutation" required>
+                                <option value="">Select salutation</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="name">Name:*</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                        </li>
+                        <li>
+                            <label for="email">Email:*</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                        </li>
+                        <li>
+                            <label for="phone">Phone:</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" />
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message*</legend>
+                    <textarea id="message" name="message" rows="6" placeholder="Type your message here"
+                        required></textarea>
+                </fieldset>
+
+                <input class="submit-btn" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Legend Fitness &amp; Nutrition&reg;. All Rights Reserved&trade;.</p>
+        <p>Supported Currencies: &dollar;, &euro;, &pound; &amp; more.</p>
+        <p>&ldquo;Healthy Body, Healthy Mind&rdquo; &mdash; The Legend Lifestyle&trade;.</p>
+        <p>For Terms &amp; Conditions, Privacy Policy &amp; Support, visit our official website.</p>
+    </footer>
+
+</body>
+
+</html>

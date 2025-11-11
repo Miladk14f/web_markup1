@@ -1,0 +1,744 @@
+/* ====== Global Styles ====== */
+* {
+    font-family: "BBH Sans Bogle", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+
+    width: 100%;
+    margin: 0 auto;
+    background-color: #249EA0;
+    color: #000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+fieldset {
+    border: 2px solid #FD5901;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+legend {
+    color: #FD5901;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+/* ====== Header ====== */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007E82;
+    padding: 10px 30px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.burger {
+    display: none;
+    position: relative;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #FF6600;
+    font-size: 22px;
+    padding: 8px 20px;
+    border: 1px solid #66B2B2;
+    border-radius: 20px;
+    background-color: #1A9A9D;
+    transition: all 0.3s ease;
+}
+
+.navbar li a:active {
+    background-color: #035d5f;
+}
+
+.navbar li a:hover {
+    background-color: #33B6B8;
+}
+
+.navbar li i {
+    color: #FF6600;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ====== Hero Section ====== */
+.hero {
+    width: 100%;
+    background: url('/img/hero.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-offer {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 400px;
+    height: 500px;
+}
+
+.hero-offer h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.hero-offer h1::first-letter {
+    text-transform: uppercase;
+}
+
+.hero-offer p {
+    margin: 10px 0 20px;
+    color: #f0f0f0;
+}
+
+.hero-offer button {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.small-btn {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    padding: 27px 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6600, #cc5200);
+    border: none;
+    cursor: pointer;
+}
+
+
+.small-btn:hover {
+    background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
+}
+
+.submit-btn {
+    padding: 10px 100px;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6600, #cc5200);
+    border: none;
+    cursor: pointer;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
+}
+
+.big-btn {
+    text-decoration: none;
+    display: flex;
+    width: 800px;
+    height: 60px;
+    padding: 27px 46px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6600, #cc5200);
+    border: none;
+    cursor: pointer;
+    color: #000;
+    margin-top: 40px;
+}
+
+.big-btn:hover {
+    background: linear-gradient(90deg, #123f3f, #07898b);
+    color: #fff;
+}
+
+/* ====== Diet Section (Fixed Design) ====== */
+.diet {
+    justify-self: center;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+    background: #FAAB36E5;
+    display: flex;
+    width: 1400px;
+    height: 480px;
+    padding: 24px 47px;
+    margin-top: 100px;
+    align-content: space-between;
+    gap: 63px;
+    flex-shrink: 0;
+}
+
+.diet strong {
+    height: 52px;
+    color: #FD5901;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 2px;
+}
+
+.diet p {
+    width: 706px;
+    height: 241px;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.diet img {
+    width: 417px;
+    height: 417px;
+    border-radius: 25px;
+    border: 3px solid #FD5901;
+}
+
+/* ====== Subscription Plans ====== */
+.subscription {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    margin-top: 100px;
+}
+
+.subscription section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-items: center;
+    border-radius: 25px;
+    width: 375px;
+    height: 720px;
+    flex-shrink: 0;
+    background-color: #FAAB36E5;
+    border: #FD5901 5px solid;
+}
+
+.subscription h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    margin-top: 40px;
+}
+
+.subscription h3.trik {
+    position: relative;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    border-color: #F0F;
+    border-style: hidden;
+    border-width: medium;
+    width: 373px;
+    height: 50px;
+    flex-shrink: 0;
+    float: none;
+    z-index: 1;
+}
+
+.subscription p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    align-self: stretch;
+}
+
+.subscription button {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+#best-deal {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    display: flex;
+    width: 287px;
+    height: 17px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 3px solid #FD5901;
+    width: 373px;
+    height: 50px;
+    flex-shrink: 0;
+    word-spacing: .1em;
+    text-indent: 1rem;
+    line-height: 1rem;
+    letter-spacing: .1em;
+}
+
+/* ====== Why Legend Section ====== */
+.why-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: #34baba;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.why-legend h1 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.why-legend p {
+    color: #fff;
+    max-width: 500px;
+}
+
+.why-legend img {
+    width: 280px;
+    border-radius: 15px;
+}
+
+/* ====== Coaches Section ====== */
+.coaches {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.coaches section:nth-child(even) {
+    background: #34baba;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 280px;
+    height: 450px;
+    text-align: left;
+}
+
+.coaches section:nth-child(odd) {
+    background: #1cc2c2;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 280px;
+    height: 450px;
+    text-align: left;
+}
+
+.coaches img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #1c7d7d;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Diet page */
+/* CONTAINER */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* HERO */
+.container>h2 {
+    color: #FD5901;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* IMAGES */
+.image-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.image-row img {
+    width: 35%;
+    border: 2px solid #FD5901;
+    border-radius: 15px;
+}
+
+/* TEXT */
+.description {
+    margin: 20px 0;
+    line-height: 1.7;
+    font-size: 30px;
+    margin: 20px 0 40px 0;
+    color: #000;
+}
+
+.form-intro h3 {
+    color: #FD5901;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 60px 0 40px 0;
+}
+
+/* FORM */
+form {
+    background-color: #34baba;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 8px;
+}
+
+.user-info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* UPLOAD GRID */
+.upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* SUBMIT */
+
+
+#cookie-accept {
+    display: none;
+}
+
+.cookie-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 320px;
+    background: #333;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cookie-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#cookie-accept:checked+.cookie-box {
+    display: none;
+}
+
+/* ====== CONTACT PAGE STYLING ====== */
+
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #FD5901;
+    box-shadow: 0 0 6px rgba(253, 89, 1, 0.4);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+
+/* ====== Responsive Design (Mobile) ====== */
+
+@media (max-width: 768px) {
+
+    .navbar-mobile {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .burger {
+        display: inline-block;
+    }
+
+    /* Hide checkbox */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Hamburger icon */
+    .hamburger {
+        font-size: 30px;
+        cursor: pointer;
+        user-select: none;
+        padding: 10px;
+        display: inline-block;
+    }
+
+    /* Menu styles */
+    .menu {
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 30px;
+        background-color: #005F60;
+        border-radius: 8px;
+        overflow: hidden;
+        height: auto;
+        width: 250px;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li i {
+        color: #FF6600;
+        cursor: pointer;
+    }
+
+    .menu a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 8px 20px;
+        border: 1px solid #66B2B2;
+        border-radius: 20px;
+        background-color: #1A9A9D;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+
+    /* When checkbox is checked → show menu */
+    #menu-toggle:checked~.menu {
+        display: flex;
+    }
+
+    #menu-toggle:checked+.hamburger::after {
+        content: "✖";
+    }
+
+    .hamburger::after {
+        content: "";
+    }
+
+    .hero-offer {
+        width: 50%;
+        height: 100%;
+    }
+
+    .navbar {
+        width: auto;
+    }
+
+    .diet {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        max-width: 700px;
+    }
+
+    .diet p {
+        width: auto;
+        height: auto;
+    }
+
+    .diet img {
+        width: 100%;
+        height: auto;
+    }
+
+    .big-btn {
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .subscription {
+        flex-direction: column;
+        width: auto;
+
+        height: auto;
+    }
+
+}
